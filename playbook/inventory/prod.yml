@@ -1,6 +1,15 @@
 ---
-elasticsearch:
-  hosts:
-    localhost:
-      ansible_connection: ssh
-      ansible_user: root
+  elasticsearch:
+    hosts:
+      elastic001:
+          ansible_host: 10.0.0.85
+          ansible_connection: ssh
+          ansible_user: root
+          ansible_ssh_pass: 123456
+  kibana:
+    hosts:
+      kibana001:
+          ansible_host: 10.0.0.86
+          ansible_connection: ssh
+          ansible_user: root
+          ansible_ssh_pass: 123456
